@@ -5,15 +5,12 @@ Created on Mon Oct 19 11:06:20 2021
 
 @author: marlinberger
 
-This is the first architecture written for the motion classification project.
-It's purpose is to validate the input-pipeline for the data, check the
-implementation of wandb etc.
-
-The Model it self is a simple LSTM architecture. This is chosen, as it's an
-architecture, that needs a stacked input, which is assumend to be the most
-complex input.
+The Model is a 1d convolutional architecture. Using the standard layers, there
+is also a sequence-pooling option implemented, as well as variing filter
+composition strategies. Preprocessing is integrated with custom layers
 """
 # python packages
+import logging
 import numpy as np
 import os
 from tensorflow import keras
@@ -28,14 +25,13 @@ from motion_tracking_helpers import custom_layers as cus_lay
 
 # BASE USER CONFIGS
 # ---------------
+mt_hlp.initialise_logger(depth="info")
 global USE_WANDB, SAVE_LOCAL, PROJECT_NAME
 # all vars here in [True, False], determine general modes
 USE_WANDB = True
 SAVE_LOCAL = True
 # where to safe at wandb
 PROJECT_NAME = "MotionClassification_DCC"
-
-
 # ---------------
 
 
@@ -62,8 +58,8 @@ def train_baseline():
         "input_framerate": 29.72,
 
         # hypers data pre
-        "fps_reduce_fac": 5,
-        "sequence_len": 100,
+        "fps_reduce_fac": 2,
+        "sequence_len": 80,
         "train_data_pack": "straight_80_20_train",
         "val_data_pack": "straight_80_20_val",
         "clip_max": True,
@@ -80,14 +76,14 @@ def train_baseline():
         "strides": 3,
         "kernel_size": 2,
         "padding": "same",
-        "activation": "None",
+        "activation": "relu",
         "pool": True,
         "max_p_sections": 25,
 
         # hypers compile
-        "optimizer": "RMSprop",
+        "optimizer": "adam",
         "init_lr": 0.002,
-        "epochs": 10,
+        "epochs": 20,
         "batch_size": 32,
 
         # callback stuff and compile params, that are not planned to be
@@ -104,7 +100,7 @@ def train_baseline():
         "INHIBIT_CALC_BY_TIME_APPX": False,
         "INHIBIT_TIME_APPX_THRESH": 200,
         "INHIBIT_CALC_BY_MAX_LOOKBACK": True,
-        "INHIBIT_MAX_LOOKBACK_THRESH": 20,
+        "INHIBIT_MAX_LOOKBACK_THRESH": 3,
         "INHIBIT_CALC_BY_MAX_PARAMS": True,
         "INHIBIT_MAX_PARAMS_THRESH": 15000000,
 
@@ -126,7 +122,7 @@ def train_baseline():
     abs_path = mt_hlp.get_abs_script_path(__file__)
 
     # build the dataset for the current run
-    DS_Builder = neu_hlp.DataBuilder(
+    DS_Builder = neu_hlp.DataBuilder_v2(
         config, abs_path, clip_max=config["clip_max"]
     )
     dataset_train = DS_Builder.build("train")

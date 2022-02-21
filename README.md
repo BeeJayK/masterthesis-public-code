@@ -1,7 +1,12 @@
+**NOTE**: This repo is just being set up. To come:
+    - The packages as ready-to-use-intallables
+    - A clearer script-showcase structure
+    - Visualization examples
+
 # Introduction
 This repository is meant to give insights on the code, that I developed to solve the tasks of my master's thesis.
 
-The thesis is done at the Digital Capibility Center (DCC) Aachen. The DCC is a cooperation between an institut of the RWTH Aachen and McKinsey, with the goal to bring dititalisation and AI into the production industry.
+The thesis is done at the Digital Capibility Center (DCC) Aachen. The DCC is a cooperation between an institut of the RWTH Aachen and McKinsey, with the goal to bring digitalisation and AI into the production industry.
 
 The work topic to be solved with the thesis is the classification of motion classes, performed by a worker, during the packaging process in a production line, based on a video stream.
 
