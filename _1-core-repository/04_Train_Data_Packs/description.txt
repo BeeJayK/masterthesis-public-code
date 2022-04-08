@@ -1,0 +1,13 @@
+Here, different data-packs (-> folders) can be created, each 
+representing an entire data pack to train/validate a model on.
+
+Each data pack contains multiple folders, where on folder represents one
+video. Each video folder contains one csv-file with the extracted hand-
+coordinates for each frame in the video, so there might be a bunch of
+files in there.
+
+The data in here is ignored for the gitupload
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

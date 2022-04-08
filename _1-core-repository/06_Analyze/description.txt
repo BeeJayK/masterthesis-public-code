@@ -1,0 +1,9 @@
+This folder contains folders with models, that shall be analyzed.
+The triggering Script is called "Model_Analyzer.py"; also look
+In there for further information belonging the folder structure etc.
+
+The data in here is ignored for the gitupload
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

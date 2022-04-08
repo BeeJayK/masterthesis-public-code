@@ -1,0 +1,3 @@
+This folder contains different Architectures, that are to be explored for the task
+of motion classification.
+The outcomes - bundled models and params - are saved in the ./_saves folder.

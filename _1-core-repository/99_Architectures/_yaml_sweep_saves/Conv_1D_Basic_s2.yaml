@@ -1,0 +1,42 @@
+program: Conv_1D_Basic.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  fps_reduce_fac:
+    distribution: int_uniform
+    min: 1
+    max: 10
+  sequence_len:
+    distribution: int_uniform
+    min: 5
+    max: 100
+  reduce_strat:
+    values: ["_red", "del_z_full", "avg_of_dims_red", "sig_5_points_full"]
+  Conv_filters_init:
+    distribution: int_uniform
+    min: 8
+    max: 64
+  Conv_layers:
+    distribution: int_uniform
+    min: 1
+    max: 10
+  double_conv_filters:
+    values: [True, False]
+  strides:
+    distribution: int_uniform
+    min: 1
+    max: 3
+  kernel_size:
+    distribution: int_uniform
+    min: 2
+    max: 5
+  pool:
+    values: [True, False]
+  max_p_sections:
+    distribution: int_uniform
+    min: 20
+    max: 120
+  init_lr:
+    values: [0.002, 0.0005, 0.0002]

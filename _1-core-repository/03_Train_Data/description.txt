@@ -1,0 +1,11 @@
+Contains one folder for every video, in which one .csv file per frame is to
+be found. This file contains the raw MediaPipe output along with
+some flags (see helpers repo, coordinate_position_assignment.py).
+The name of each file is [framenum_label]. This way, it can easily
+be used in the input pipeline of a model.
+
+The train data files are excluded from the git repository
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

@@ -1,0 +1,8 @@
+One table for every raw video is to be found here, containing the movement
+start with its frame number
+
+The tables are excluded in the git repository
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

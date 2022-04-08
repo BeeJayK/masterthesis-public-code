@@ -1,0 +1,8 @@
+Contains the outputs from the video-camera. Just video-per-video
+as .mp4 files
+
+The videos are excluded in the git repository
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

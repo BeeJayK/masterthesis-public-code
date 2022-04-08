@@ -1,0 +1,30 @@
+program: Dense_TDh_speedmod.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  fps_reduce_fac:
+    distribution: int_uniform
+    min: 1
+    max: 10
+  sequence_len:
+    distribution: int_uniform
+    min: 3
+    max: 105
+  Dense_TD_cells:
+    distribution: int_uniform
+    min: 1
+    max: 500
+  Dense_TD_layers:
+    distribution: int_uniform
+    min: 0
+    max: 20
+  Dense_flat_cells:
+    distribution: int_uniform
+    min: 5
+    max: 500
+  Dense_flat_layers:
+    distribution: int_uniform
+    min: 0
+    max: 20

@@ -1,0 +1,29 @@
+program: LSTM_Basic.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  fps_reduce_fac:
+    distribution: int_uniform
+    min: 1
+    max: 30
+  sequence_len:
+    distribution: int_uniform
+    min: 2
+    max: 90
+  reduce_strat:
+    values: [
+      "_full", "_red", "del_z_full", "del_z_red", "sig_5_points_full",
+      "sig_5_points_red"
+    ]
+  LSTM_cells:
+    distribution: int_uniform
+    min: 25
+    max: 250
+  LSTM_layers:
+    distribution: int_uniform
+    min: 1
+    max: 12
+  init_lr:
+    values: [0.002, 0.0005, 0.0001]

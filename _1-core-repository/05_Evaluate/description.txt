@@ -1,0 +1,16 @@
+This folder contains data that shall be evaluated with a solution for the
+motion classification. One main folder contains three subfolders:
+	01_Processed_Videos: the frame representation (-> tiff pictures)
+			    of the video. Create with the Create_Train_Data
+			    Routine
+	02_Label_Tables: optional. If provided, the models output is not
+			displayed but can also be evaluated
+	03_Model: contains the .h5 model to use, possibly with a config file
+
+The processed video will be saved into the evaluation folder.
+
+The data in here is ignored for the gitupload
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

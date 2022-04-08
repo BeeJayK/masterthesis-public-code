@@ -1,0 +1,37 @@
+program: Dense_TDh.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  fps_reduce_fac:
+    distribution: int_uniform
+    min: 1
+    max: 10
+  sequence_len:
+    distribution: int_uniform
+    min: 3
+    max: 100
+  normalize_strat:
+    values: ["seq_on_last", "inst_on_self"]
+  reduce_strat:
+    values: ["_full", "_red", "del_z_full", "del_z_red", "avg_of_dims_full",
+      "avg_of_dims_red", "sig_5_points_full", "sig_5_points_red"]
+  Dense_TD_cells:
+    distribution: int_uniform
+    min: 1
+    max: 200
+  Dense_TD_layers:
+    distribution: int_uniform
+    min: 0
+    max: 6
+  Dense_flat_cells:
+    distribution: int_uniform
+    min: 5
+    max: 20
+  Dense_flat_layers:
+    distribution: int_uniform
+    min: 0
+    max: 2
+  init_lr:
+    values: [0.01, 0.002, 0.0005, 0.0002]

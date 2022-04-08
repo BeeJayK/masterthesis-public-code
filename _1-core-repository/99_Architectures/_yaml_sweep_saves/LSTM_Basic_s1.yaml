@@ -1,0 +1,33 @@
+program: LSTM_Basic.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  fps_reduce_fac:
+    distribution: int_uniform
+    min: 1
+    max: 30
+  sequence_len:
+    distribution: int_uniform
+    min: 1
+    max: 100
+  normalize_strat:
+    values: ["pic_bound", "seq_on_last", "inst_on_self"]
+  reduce_strat:
+    values: [
+      "_full", "_red", "del_z_full", "del_z_red", "avg_of_dims_full",
+      "avg_of_dims_red", "sig_5_points_full", "sig_5_points_red"
+    ]
+  LSTM_cells:
+    distribution: int_uniform
+    min: 1
+    max: 50
+  LSTM_layers:
+    distribution: int_uniform
+    min: 1
+    max: 10
+  init_lr:
+    values: [0.2, 0.05, 0.01]
+  optimizer:
+    values: ["adam", "RMSprop"]

@@ -1,0 +1,10 @@
+The structure here will be a mirror of "00_Raw_Video", but with the inputs renamed
+to ensure they are named properly: The Name of every file within each video folder
+now represents its frame number, starting at 0.
+The content in here is to be used for the labeling
+
+The videos are excluded in the git repository
+
+@BeeJayK synced this folder with his own pCloud structure. If 
+you use this repo for development, @BeeJayK would recommend you
+to do it the same way.

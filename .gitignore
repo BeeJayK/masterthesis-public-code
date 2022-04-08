@@ -130,3 +130,27 @@ dmypy.json
 
 # ignore Mac temp files
 .DS_Store
+
+# exclude video, foto and train-ready dirs, but include their description files
+_1-core-repository/00_Raw_Inputs/*
+!_1-core-repository/00_Raw_Inputs/description.txt
+_1-core-repository/01_Renamed_Inputs/*
+!_1-core-repository/01_Renamed_Inputs/description.txt
+_1-core-repository/02_Label_Tables/*
+!_1-core-repository/02_Label_Tables/description.txt
+_1-core-repository/03_Train_Data/*
+!_1-core-repository/03_Train_Data/description.txt
+_1-core-repository/04_Train_Data_Packs/*
+!_1-core-repository/04_Train_Data_Packs/description.txt
+_1-core-repository/05_Evaluate/*
+!_1-core-repository/05_Evaluate/description.txt
+_1-core-repository/06_Analyze/*
+!_1-core-repository/06_Analyze/description.txt
+
+# exclude wandb and model saves
+wandb/
+_1-core-repository/99_Architectures/_saves/*
+!_1-core-repository/99_Architectures/_saves/description.
+.idea/**
+**/*venv
+**/*venv*
