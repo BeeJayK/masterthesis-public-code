@@ -21,7 +21,8 @@ The work topic to be solved with the thesis is the classification of motion clas
 The stream is processed by two neural networks, of which the first extracts the handcoordinates from images (using google's mediapipe) and the second takes these coordinate representations along with aditional information and predicts the current motion class.
 
 A visualized models output look like:
-<img width="1363" alt="github-repo-main-visualization" src="https://user-images.githubusercontent.com/75037677/162510168-8280dfcc-5d0c-43a4-b02c-46533ff4fb4f.png">
+<img width="1347" alt="github-repo-main-visualization" src="https://user-images.githubusercontent.com/75037677/162510608-eb3cb1ed-db22-4f67-b8f6-1cba1971a2a6.png">
+
 
 
 Based on reliable motion class predictions (action recognition), one can easily develop toplevel routines, that can solve tasks which are currently time consuming, complicated and expensive. These tasks include (dynamic) cycle time calculations, tracking of station utilization, worker guidance, on-the-fly quality control and many more
