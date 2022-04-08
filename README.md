@@ -3,7 +3,26 @@
 - A clearer script-showcase structure
 - Visualization examples
 
-# Introduction
+## Overview
+This repository contains all the code developed during the handed masters "Entwicklung eines Deep Learning Modells zur Analyse von Arbeitsschritten in einem manuellen Verpackprozess", which translates to "Devoloping a deep learning model to analyse work steps in a manual packaging process".
+
+Scripts directly referenced in the thesis can be found in the folder '_0-code_showcases'.
+These are:
+- Create_Train_Data.py (creation of train-ready-data from raw video inputs)
+- mt_neural_helpers.py (DataBuilder, Inhibiting functions, Callbacks and related functions)
+- custom_layers.py (implementations of the (ML) preprocessing pipeline via custom layers)
+- Conv_1D_Basic.py (expamle of the Pipeline for the Conv-1d Models)
+- motion_tracking_helpers.py (general helper functions)
+
+If one would like to redo the experiments, feel free to reach out to @BeeJayK for the training data.
+One would need to: 
+- clone the core-repository and the helpers-repository
+- install the helpers-repository via pip
+- fill in the data in the core-repository where it's needed
+- possibly set up IT connections for training-PC and data synchronisation as shown in the thesis
+
+
+## Introduction
 This repository is meant to give insights on the code, that I developed to solve the tasks of my master's thesis.
 
 The thesis is done at the Digital Capibility Center (DCC) Aachen. The DCC is a cooperation between an institut of the RWTH Aachen and McKinsey, with the goal to bring digitalisation and AI into the production industry.
