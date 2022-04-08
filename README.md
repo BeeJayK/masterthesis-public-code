@@ -1,8 +1,3 @@
-**NOTE**: This repo is just being set up. To come:
-- The packages as ready-to-use-intallables
-- A clearer script-showcase structure
-- Visualization examples
-
 ## Overview
 This repository contains all the code developed during the handed masters "Entwicklung eines Deep Learning Modells zur Analyse von Arbeitsschritten in einem manuellen Verpackprozess", which translates to "Devoloping a deep learning model to analyse work steps in a manual packaging process".
 
