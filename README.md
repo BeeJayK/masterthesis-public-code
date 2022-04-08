@@ -1,7 +1,7 @@
 **NOTE**: This repo is just being set up. To come:
-    - The packages as ready-to-use-intallables
-    - A clearer script-showcase structure
-    - Visualization examples
+- The packages as ready-to-use-intallables
+- A clearer script-showcase structure
+- Visualization examples
 
 # Introduction
 This repository is meant to give insights on the code, that I developed to solve the tasks of my master's thesis.
