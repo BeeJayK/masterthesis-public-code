@@ -1,5 +1,5 @@
 # Overview
-This repository contains all the code developed during the handed masters "Entwicklung eines Deep Learning Modells zur Analyse von Arbeitsschritten in einem manuellen Verpackprozess", which translates to "Devoloping a deep learning model to analyse work steps in a manual packaging process".
+This repository contains all the code developed during the handed masters thesis "Entwicklung eines Deep Learning Modells zur Analyse von Arbeitsschritten in einem manuellen Verpackprozess", which translates to "Devoloping a deep learning model to analyse work steps in a manual packaging process".
 
 Scripts directly referenced in the thesis can be found in the folder '_0-code_showcases'.
 
