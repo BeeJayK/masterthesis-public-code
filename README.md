@@ -10,6 +10,8 @@ These are:
 - Conv_1D_Basic.py (expamle of the Pipeline for the Conv-1d Models)
 - motion_tracking_helpers.py (general helper functions)
 
+If Scripts are not directly mentioned, theire path in the project's structure is described in the thesis.
+
 
 # Introduction
 This repository is meant to give insights on the code, that I developed to solve the tasks of my master's thesis.
